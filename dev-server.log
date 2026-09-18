@@ -1,0 +1,66 @@
+
+> dev
+> concurrently --kill-others-on-fail --names server,client "npm run dev -w server" "npm run dev -w client"
+
+[server] 
+[server] > @freellmapi/server@0.2.1 dev
+[server] > tsx watch src/index.ts
+[server] 
+[client] 
+[client] > @freellmapi/client@0.0.0 dev
+[client] > vite
+[client] 
+[client] [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+[client]   - `__dirname` (vite.config.ts:7:42). Use `import.meta.dirname` instead
+[client] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[client] 
+[client]   [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m5278[22m[2m[0m ms[22m
+[client] 
+[client]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[client] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[client] [2m8:46:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] scanning dependencies...
+[client] [2m8:46:19 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
+[server] ◇ injected env (2) from ..\.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+[server] [config] .env check: 2 documented defaults missing. Startup continues.
+[server] [config]   missing from .env: REQUEST_ANALYTICS_MAX_ROWS, REQUEST_ANALYTICS_RETENTION_DAYS
+[server] [config]   Compare .env.example when you next edit your config.
+[server] Database initialized at C:\Users\SahajMobile\projects\llm\freellmapi\server\data\freeapi.db
+[server] Seeded 25 models and fallback config
+[server] 
+[server]   Your unified API key: freellmapi-18218af5a0afc65552601b39fd92559935486cd5bdb4658b
+[server] 
+[server] Created Default profile
+[server] ERROR: The system was unable to find the specified registry key or value.
+[server] [proxy] Not configured — outbound requests go direct.
+[server] Server running on http://[::]:3001
+[server] Proxy endpoint: http://[::]:3001/v1/chat/completions
+[server] [Health] Starting health checker (every ~300s ±20%)
+[server] [catalog-sync] polling https://api.freellmapi.co every 12h
+[server] [CooldownProbe] starting cooldown-probe recovery (scan every 60s)
+[server] [catalog-sync] applied monthly v2026.09.15.d92254: 54 updated, 238 new, 68 removed, 53 quirks, 3 skipped (unknown platform)
+[server] [Health] Checking 0 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 0 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 0 keys...
+[server] [Health] Check complete.
+[server] [Error] Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[server] [Proxy] routing exhausted (no upstream tried) req=96658f requested=auto candidates=1:
+[server]   255 model(s) skipped: no enabled+healthy key for platform (agnes, aihorde, aion, bazaarlink, cloudflare, cohere, google, groq, huggingface, kilo, llm7, mistral, modelscope, nara, nvidia, ollama, opencode, openrouter, ovh, reka, requesty, sealion, zhipu)
+[server] [Health] Checking 0 keys...
+[server] [Health] Check complete.
+[client] npm error Lifecycle script `dev` failed with error:
+[client] npm error code 4294967295
+[client] npm error path C:\Users\SahajMobile\projects\llm\freellmapi\client
+[client] npm error workspace @freellmapi/client@0.0.0
+[client] npm error location C:\Users\SahajMobile\projects\llm\freellmapi\client
+[client] npm error command failed
+[client] npm error command C:\Windows\system32\cmd.exe /d /s /c vite
+[client] npm run dev -w client exited with code 0
+[server] npm error Lifecycle script `dev` failed with error:
+[server] npm error code 4294967295
+[server] npm error path C:\Users\SahajMobile\projects\llm\freellmapi\server
+[server] npm error workspace @freellmapi/server@0.2.1
+[server] npm error location C:\Users\SahajMobile\projects\llm\freellmapi\server
+[server] npm error command failed
+[server] npm error command C:\Windows\system32\cmd.exe /d /s /c tsx watch src/index.ts

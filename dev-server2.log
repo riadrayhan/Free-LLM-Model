@@ -1,0 +1,52 @@
+
+> dev
+> concurrently --kill-others-on-fail --names server,client "npm run dev -w server" "npm run dev -w client"
+
+[server] 
+[server] > @freellmapi/server@0.2.1 dev
+[server] > tsx watch src/index.ts
+[server] 
+[client] 
+[client] > @freellmapi/client@0.0.0 dev
+[client] > vite
+[client] 
+[client] [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+[client]   - `__dirname` (vite.config.ts:7:42). Use `import.meta.dirname` instead
+[client] Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+[client] 
+[client]   [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m745[22m[2m[0m ms[22m
+[client] 
+[client]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[client] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[server] ◇ injected env (3) from ..\.env // tip: ⌘ override existing { override: true }
+[server] [config] .env check: 2 documented defaults missing. Startup continues.
+[server] [config]   missing from .env: REQUEST_ANALYTICS_MAX_ROWS, REQUEST_ANALYTICS_RETENTION_DAYS
+[server] [config]   Compare .env.example when you next edit your config.
+[server] Database initialized at C:\Users\SahajMobile\projects\llm\freellmapi\server\data\freeapi.db
+[server] [config] applied FREEAPI_CONFIG_JSON: 1 keys, 0 custom models, 0 model edits, 0 fallback rows, routing
+[server] ERROR: The system was unable to find the specified registry key or value.
+[server] [proxy] Not configured — outbound requests go direct.
+[server] Server running on http://[::]:3001
+[server] Proxy endpoint: http://[::]:3001/v1/chat/completions
+[server] [Health] Starting health checker (every ~300s ±20%)
+[server] [catalog-sync] re-applied cached monthly v2026.09.15.d92254 after boot
+[server] [catalog-sync] polling https://api.freellmapi.co every 12h
+[server] [CooldownProbe] starting cooldown-probe recovery (scan every 60s)
+[server] [Proxy] 15:40:59 start 20258f a0 aihorde - koboldcpp/Gemma-4-E4B-it-Ultra-Uncensored-Heretic req=auto
+[server] [Proxy] 15:41:22 ok 20258f a0 aihorde - koboldcpp/Gemma-4-E4B-it-Ultra-Uncensored-Heretic lat=23522ms in=5 out=196
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
+[server] [Health] Checking 1 keys...
+[server] [Health] Check complete.
